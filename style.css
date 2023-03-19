@@ -1,9 +1,31 @@
+
+/* 
+-Usar os importes de css aqui evita que o nosso html fique cheio de links stylesheets
+-Quando o novagador carrega o style.css ele ja carrega todos os css de uma unica vez, e não fica vendo um a um, agilizando o procesamento.
+*/
+@import url("./styles/header.css");
+@import url("./styles/banner.css");
+@import url("./styles/carrossel.css");
+@import url("./styles/topicos.css");
+@import url("./styles/conato.css");
+@import url("./styles/rodape.css");
+
+
 :root{
     --cor-de-fundo: #EBECEE;
+    --branco: #fff;
+    --laranja: #EB9B00;
+    --azul-degrade: linear-gradient(97.54deg, #002F52 35.49%, #326589 165.37%);
+    --fonte-principal: "Poppins";
+    --azul: #002F52;
+
 }
 
 body{
     background-color: var(--cor-de-fundo);
+    font-family: var(--fonte-principal);
+    font-size: 16px;
+    font-weight: 400;
 }
 
 h1{
